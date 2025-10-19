@@ -7,14 +7,25 @@ import { use } from "react";
 function App() {
   const [count, setCount] = useState(0);
 
-  function onclick() {
+  function onclickIncrease() {
     setCount(count + 1);
+  }
+  function onclickDecrease() {
+    setCount(count - 1);
+  }
+  function Reset() {
+    setCount(0);
   }
 
   return (
-    <div>
-      <button onClick={onclick}>Counter: {count}</button>
-    </div>
+    <>
+      <h1>Counter : {count}</h1>
+      <div>
+        <button onClick={onclickIncrease}>Increase</button>
+        <button onClick={onclickDecrease}>Decrease</button>
+        <button onClick={Reset}>Reset</button>
+      </div>
+    </>
   );
 }
 
