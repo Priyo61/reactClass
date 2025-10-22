@@ -7,6 +7,7 @@ import IrilPageBody from "./components/IrilPageBody";
 import LandingPage from "./components/LandingPage";
 import ErrorPage from "./components/ErrorPage";
 import LearnUseRef from "./components/LearnUseRef";
+import LightBulbRolling from "./components/LightBulbRolling";
 function App() {
   return (
     <>
@@ -40,6 +41,10 @@ function App() {
       <div>
         <h1>Here i am learning useRef</h1>
         <LearnUseRef></LearnUseRef>
+      </div>
+      <div>
+        <h1>Here i am learning rolling up</h1>
+        <LightBulbRolling></LightBulbRolling>
       </div>
     </>
   );
